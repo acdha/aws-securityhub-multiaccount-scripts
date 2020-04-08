@@ -299,6 +299,7 @@ if __name__ == '__main__':
     for account in aws_account_dict.keys():
         if account == args.master_account:
             print("Won't try to link master account %s to itself" % account)
+            continue
 
         try:
 
